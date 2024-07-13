@@ -11,8 +11,6 @@ number = st.number_input("No. of tweets",min_value=1,max_value=10,step=1,value=1
 gemini_model = CGGA(model="gemini-1.5-flash-latest")
 
 if st.button("Generate"):
-    st.write(topic)
-    st.write(number)
     prompt = f"Give me {number} of tweets on {topic}"
     response=gemini_model.invoke(prompt)
     st.write(response.content)
