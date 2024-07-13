@@ -2,7 +2,7 @@ import streamlit as st
 import langchain
 import os
 from langchain_google_genai import ChatGoogleGenerativeAI as CGGA
-os.environ['GOOGLE_API_KEY']  = os.getenv('OPEN_API_KEY')
+os.environ['GOOGLE_API_KEY']  = "AIzaSyATG3mk2OYtsClInWK1QTSdFBET08M-Tcc"
 
 st.title("Tweet Generator")
 st.subheader("Generate Tweets on any topic")
